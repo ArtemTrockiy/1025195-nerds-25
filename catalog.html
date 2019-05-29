@@ -7,15 +7,15 @@
   <body>
 <header class="main-header">
 <nav class="main-navigation">
-  <a class="main-header-logo"> <img src="img/index-logo.svg" width="" height="" alt="Логотип веб-студии «Нёрдс»"></a>
+    <a class="main-header-logo"> <img src="img/nerds-logo.png" width="160" height="67" alt="Логотип веб-студии «Нёрдс»"></a>
   <ul>class="site-navigation">
     <li><a href="studio.html">Студия</a></li>
     <li><a href="customers.html">Клиенты</a></li>
-    <li class="site-navigation-current" href="catalog.html"><a>Магазин</a></li>
+    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
     <li><a href="contacs.html">Контакты</a></li>
     </ul>
-    <ul class="container"
-    <li class="container-link">Корзина</li>
+    <ul class="user-navigation">
+    <li class="navigation-link">Корзина</li>
     </ul>
 </nav>
 <h1 class="title">Магазин готовых шаблонов</h1>
@@ -23,15 +23,58 @@
 <main>
 <section class="filters">
   <h2 class="visually-hidden">Фильтр шаблонов</h2>
-    <!--Здесь будет форма-->
-    <ul>
-        <li>Адаптивная</li>
-      <li>Фиксированная</li>
-      <li>Резтновая</li>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+          <legend>Сётка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-options" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-options" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-options" value="flexible" id="filter-flexible">
+              <label for="filter-flexible">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="container" id="filter-container">
+            <label for="filter-container">Корзина</label>
+          </li>
 
-      </ul>
-</section>
-  <ul class="catalog-list">
+        </ul>
+      </fieldset>
+      <button type="submit" class="filter-button button">
+        Показать
+      </button>
+    </form>
+  </section>
+
+  <section>
+<ul class="catalog-list">
     <li class="catalog-item">
       <img class="product-image" src="img/img-sedona.png" width="360" heihgt="576"
       <div class="product-description">
@@ -88,20 +131,20 @@
               </li>
 
         </ul>
+      </section>
       </main>
-      <footer class="main-footer"
-      <div class="social">
-      <ul>
-        <li><a class="social-button" <img src="img/vk-icon.png" width="27" height="16"> href="#">Вконтакте</a></li>
-        <li><a class="social-button" <img src="img/fb-icon.png" width="12"height="22"> href="#">Фейсбук</a></li>
-        <li><a class="social-button" <img src="img/insta-icon.png" width="21"height="21">ref="#">Инстаграмм</a></li>
-      </ul>
-      </div>
-      <p class="slogan"
-      <b>Давайте дружить,это выгодно!</b>
-      Скидка 10% для друзей из социальних сетей
-      </p>
-      </footer>
+      <footer class="main-footer">
+          <ul class="social">
+            <li><a class="social-button"> <img src="img/vk-icon.png" width="27" height="16"> href="#">Вконтакте</a></li>
+            <li><a class="social-button"> <img src="img/fb-icon.png" width="12"height="22"> href="#">Фейсбук</a></li>
+            <li><a class="social-button"> <img src="img/insta-icon.png" width="21"height="21"> href="#">Инстаграмм</a></li>
+          </ul>
+
+          <div  class="slogan">
+          <b>Давайте дружить,это выгодно!</b>
+          <p>Скидка 10% для друзей из социальних сетей</p>
+          </div>
+          </footer>
 
 
 
@@ -109,10 +152,8 @@
 
 
 
-        </body>
-      </html>
-
-
+            </body>
+          </html>
 
 
 
