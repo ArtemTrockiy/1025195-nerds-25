@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto",  sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+font-size: 16px;
+color: #000000;
+line-height: 30px;
+
+background-color : #D8D8D8;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.main-header-logo :hover
+.main-header-logo :focus {
+  background-color: #A8A8A8
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+.advantages-list {
+  list-style: none;
+}
+.advantages-item {
+  text-align: center;
+     }
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.button-link-web-sites {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #FB565A;
+  border: none;
+}
+.button-link-app{
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #00CA74;
+  border: none;
+}
+.button-link-presentation {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
+  border: none;
+}
+.button-link-web-sites:hover {
+background-color: #FB565A;
+}
+.button-link-web-sites:focus {
+  background-color: #E74246;
+}
+.button-link-web-sites:active {
+  background-color: #d7373b;
+}
+.button-link-app:hover {
+  background-color: #00CA74;
+  }
+  .button-link-app:focus {
+    background-color: #00bc6c;
+  }
+  .button-link-app:active {
+    background-color: #00aa62;
+  }
+  .button-link-presentation:hover {
+    background-color: #efc84a;
+    }
+    .button-link-presentation:focus {
+      background-color: #eab534;
+    }
+    .button-link-presentation:active {
+      background-color: #eaa722;
+    }
+    .social {
+      list-style: none;
+    }
+
+    .social-button {
+      color: #ffffff;
+    }
+    .slogan {
+  text-align: center;
+   }
+
+/*сделал базовую стилизацию главной страници, не могу понять как делать католог*/
+.title {
+  margin: 0;
+  padding-top: 78px;
+  padding-bottom: 109px;
+
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+}

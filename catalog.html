@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
 <nav class="main-navigation">
     <a class="main-header-logo"> <img src="img/nerds-logo.png" width="160" height="67" alt="Логотип веб-студии «Нёрдс»"></a>
-  <ul>class="site-navigation">
+  <ul class="site-navigation">
     <li><a href="studio.html">Студия</a></li>
     <li><a href="customers.html">Клиенты</a></li>
     <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
     <li><a href="contacs.html">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
-    <li class="navigation-link">Корзина</li>
+       <li class="navigation-link">Корзина</li>
     </ul>
 </nav>
 <h1 class="title">Магазин готовых шаблонов</h1>
@@ -76,7 +78,7 @@
   <section>
 <ul class="catalog-list">
     <li class="catalog-item">
-      <img class="product-image" src="img/img-sedona.png" width="360" heihgt="576"
+      <img class="product-image" src="img/img-sedona.png" alt="Скриншот сайта Sedona" width="360" height="576" >
       <div class="product-description">
           <h3 class="product-title">Sedona</h3>
           <p class="product-text">Информационный сайт<br>
@@ -85,7 +87,7 @@
         </div>
     </li>
     <li class="catalog-item">
-        <img class="product-image" src="img/img-pink.jpg" width="360" heihgt="576"
+        <img class="product-image" src="img/img-pink.jpg" alt="Скриншот сайта Ping App" width="360" height="576" >
         <div class="product-description">
             <h3 class="product-title">Pink app</h3>
             <p class="product-text">Продуктовый лендинг <br>
@@ -94,7 +96,7 @@
           </div>
       </li>
       <li class="catalog-item">
-          <img class="product-image" src="img/img-barbershop.jpg" width="360" heihgt="576"
+          <img class="product-image" src="img/img-barbershop.jpg" alt="Скриншот сайта Barbershop"  width="360" height="576" >
           <div class="product-description">
               <h3 class="product-title">Barbershop</h3>
               <p class="product-text">Сайт салона красоты.<br>
@@ -103,7 +105,7 @@
             </div>
         </li>
         <li class="catalog-item">
-            <img class="product-image" src="img/img-mishka.jpg" width="360" heihgt="576"
+            <img class="product-image" src="img/img-mishka.jpg" alt="Скриншот сайта MISHKA" width="360" height="576" >
             <div class="product-description">
                 <h3 class="product-title">Mishka</h3>
                 <p class="product-text">Интернет-магазин<br>
@@ -112,7 +114,7 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img class="product-image" src="img/img-aplus.jpg" width="360" heihgt="576"
+              <img class="product-image" src="img/img-aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576" >
               <div class="product-description">
                   <h3 class="product-title">A plus</h3>
                   <p class="product-text">Лендинг курсов повышения<br>
@@ -121,7 +123,7 @@
                 </div>
             </li>
             <li class="catalog-item">
-                <img class="product-image" src="img/img-kvast.jpg" width="360" heihgt="576"
+                <img class="product-image" src="img/img-kvast.jpg" alt="Скриншот сайта КВАСТ" width="360" height="576" >
                 <div class="product-description">
                     <h3 class="product-title">Кваст</h3>
                     <p class="product-text">Промо-сайт производителя<br>
@@ -135,9 +137,9 @@
       </main>
       <footer class="main-footer">
           <ul class="social">
-            <li><a class="social-button"> <img src="img/vk-icon.png" width="27" height="16"> href="#">Вконтакте</a></li>
-            <li><a class="social-button"> <img src="img/fb-icon.png" width="12"height="22"> href="#">Фейсбук</a></li>
-            <li><a class="social-button"> <img src="img/insta-icon.png" width="21"height="21"> href="#">Инстаграмм</a></li>
+            <li><a class="social-button"> <img src="img/vk-icon.png" alt="vk" width="27" height="16"> href="#">Вконтакте</a></li>
+            <li><a class="social-button"> <img src="img/fb-icon.png" alt="facebook" width="12" height="22"> href="#">Фейсбук</a></li>
+            <li><a class="social-button"> <img src="img/insta-icon.png"  alt="instagram" width="21" height="21"> href="#">Инстаграмм</a></li>
           </ul>
 
           <div  class="slogan">
@@ -146,6 +148,27 @@
           </div>
           </footer>
 
+          <section class="contacts">
+              <h2>Напишите нам</h2>
+              <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="contacts-text">
+                  <p>
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                  </p>
+                  <p>
+                    <label for="email">Ваш e-mail:</label>
+                    <input id="email" type="text" name="email" placeholder="email@example.com">
+                  </p>
+                </div>
+                <p>
+                  <label for="message">Текст письма:</label>
+                  <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+              </form>
+              <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            </section>
 
 
 
