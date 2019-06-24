@@ -5,10 +5,14 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
+
 <header class="main-header">
-<nav class="main-navigation">
+
+  <nav class="main-navigation">
     <a class="main-header-logo"> <img src="img/nerds-logo.png" width="160" height="67" alt="Логотип веб-студии «Нёрдс»"></a>
   <ul class="site-navigation">
     <li><a href="studio.html">Студия</a></li>
@@ -22,10 +26,35 @@
 </nav>
 <h1 class="title">Магазин готовых шаблонов</h1>
 </header>
-<main>
-<section class="filters">
-  <h2 class="visually-hidden">Фильтр шаблонов</h2>
+
+
+ <main class="inner-page">
+ <aside class="filter">
+ <h2 class="visually-hidden">Фильтр шаблонов</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="price-filter">
+          <legend>Стоимость:</legend>
+          <div class="range-control">
+            <div class="progress">
+              <div class="current-progress">
+                <div class="progress-button-wrapper">
+                  <button type="button"><span class="visually-hidden">стоимость от</span></button>
+                </div>
+                <div class="progress-button-wrapper">
+                  <button type="button"><span class="visually-hidden">стоимость до</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="range-display">
+            <label>От
+              <input type="text" name="min-price" value="0">
+            </label>
+            <label>До
+              <input type="text" name="max-price" value="15000">
+            </label>
+          </p>
+        </fieldset>
       <fieldset>
           <legend>Сётка:</legend>
           <ul>
@@ -69,18 +98,30 @@
 
         </ul>
       </fieldset>
-      <button type="submit" class="filter-button button">
-        Показать
-      </button>
+      <button type="submit" class="filter-button button">Показать</button>
     </form>
-  </section>
+  </aside>
 
-  <section>
-<ul class="catalog-list">
+  <section class="catalog">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <div class="catalog-sorting">
+        <b>Сортировать:</b>
+        <ul class="type-sorting-list">
+          <li><a class="type-current">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <ul class="direction-sorting-list">
+          <li class="direction-current"><a><span class="visually-hidden">По убыванию</span></a></li>
+          <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+        </ul>
+      </div>
+
+    <ul class="catalog-list">
     <li class="catalog-item">
       <img class="product-image" src="img/img-sedona.png" alt="Скриншот сайта Sedona" width="360" height="576" >
       <div class="product-description">
-          <h3 class="product-title">Sedona</h3>
+          <a href="#"><h3 class="product-title">Sedona</h3></a>
           <p class="product-text">Информационный сайт<br>
             для туристов</p>
           <a href="#" class="button">9 900 руб.</a>
@@ -89,7 +130,7 @@
     <li class="catalog-item">
         <img class="product-image" src="img/img-pink.jpg" alt="Скриншот сайта Ping App" width="360" height="576" >
         <div class="product-description">
-            <h3 class="product-title">Pink app</h3>
+            <a href="#"><h3 class="product-title">Pink app</h3></a>
             <p class="product-text">Продуктовый лендинг <br>
               приложения для iOS и Android</p>
             <a href="#" class="button">9 900 руб.</a>
@@ -98,7 +139,7 @@
       <li class="catalog-item">
           <img class="product-image" src="img/img-barbershop.jpg" alt="Скриншот сайта Barbershop"  width="360" height="576" >
           <div class="product-description">
-              <h3 class="product-title">Barbershop</h3>
+              <a href="#"><h3 class="product-title">Barbershop</h3></a>
               <p class="product-text">Сайт салона красоты.<br>
                 Для мужчин, да.</p>
               <a href="#" class="button">9 900 руб.</a>
@@ -107,7 +148,7 @@
         <li class="catalog-item">
             <img class="product-image" src="img/img-mishka.jpg" alt="Скриншот сайта MISHKA" width="360" height="576" >
             <div class="product-description">
-                <h3 class="product-title">Mishka</h3>
+                <a href="#"><h3 class="product-title">Mishka</h3></a>
                 <p class="product-text">Интернет-магазин<br>
                     вязаных игрушек</p>
                 <a href="#" class="button">9 900 руб.</a>
@@ -116,7 +157,7 @@
           <li class="catalog-item">
               <img class="product-image" src="img/img-aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576" >
               <div class="product-description">
-                  <h3 class="product-title">A plus</h3>
+                  <a href="#"><h3 class="product-title">A plus</h3></a>
                   <p class="product-text">Лендинг курсов повышения<br>
                     квалификации</p>
                   <a href="#" class="button">9 900 руб.</a>
@@ -125,7 +166,7 @@
             <li class="catalog-item">
                 <img class="product-image" src="img/img-kvast.jpg" alt="Скриншот сайта КВАСТ" width="360" height="576" >
                 <div class="product-description">
-                    <h3 class="product-title">Кваст</h3>
+                    <a href="#"><h3 class="product-title">Кваст</h3></a>
                     <p class="product-text">Промо-сайт производителя<br>
                        крафтового кваса</p>
                     <a href="#" class="button">9 900 руб.</a>
@@ -133,10 +174,32 @@
               </li>
 
         </ul>
+        <ul class="pagination-list">
+            <li class="pagination-item"><a class="current">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#" class="next-page">Следующая</a></li>
+          </ul>
       </section>
-      </main>
+    </main>
+
       <footer class="main-footer">
-          <ul class="social">
+          <section class="contacts">
+              <h2 class="visually-hidden">Контакты</h2>
+              <iframe src="https://www.google.com.ua/maps/@59.9392232,30.323169,17z?hl=ru"></iframe>
+              <img src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+                width="1440" height="416">
+              <div class="container">
+                <div class="contacts-info">
+                  <b>NЁRDS DESIGN STUDIO</b>
+                  <p class="contacts-info-text">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+                  <p class="contacts-info-text">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+                  <a class="write-us button" href="form.html">Напишите нам</a>
+                </div>
+              </div>
+            </section>
+
+        <ul class="social">
             <li><a class="social-button"> <img src="img/vk-icon.png" alt="vk" width="27" height="16"> href="#">Вконтакте</a></li>
             <li><a class="social-button"> <img src="img/fb-icon.png" alt="facebook" width="12" height="22"> href="#">Фейсбук</a></li>
             <li><a class="social-button"> <img src="img/insta-icon.png"  alt="instagram" width="21" height="21"> href="#">Инстаграмм</a></li>
