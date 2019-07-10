@@ -105,7 +105,7 @@ a[href].header-logo:focus {
 }
 
 a[href].header-logo:active {
-  opacity: 0.3;
+   opacity: 0.3;
 }
 
 ul.site-navigation,
